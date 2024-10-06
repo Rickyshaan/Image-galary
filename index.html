@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RICKY'S IMAGE GALLERY</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>RICKY'S IMAGE GALLERY</h1>
+    <div class="gallery">
+        <figure>
+            <img src="image1.png" alt="Image 1">
+        </figure>
+        <figure>
+            <img src="image2.png" alt="Image 2">
+        </figure>
+        <figure>
+            <img src="image3.png" alt="Image 3">
+        </figure>
+    </div>
+
+    <!-- Modal for showing the larger view of the image -->
+    <div class="modal" id="modal">
+        <span id="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImg">
+        <div id="caption"></div>
+        <div class="arrow left" onclick="changeImage(-1)">&#10094;</div>
+        <div class="arrow right" onclick="changeImage(1)">&#10095;</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
